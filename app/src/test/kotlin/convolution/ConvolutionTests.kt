@@ -1,11 +1,4 @@
 import convolution.convolution
-import convolution.convolutionParallelCols
-import convolution.convolutionParallelPixels
-import convolution.convolutionParallelRectangles
-import convolution.convolutionParallelRows
-import convolution.sequentialConvolution
-import filters.convertToFilterType
-import filters.createFilter
 import io.loadImage
 import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Test
