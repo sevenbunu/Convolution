@@ -4,9 +4,11 @@ on:
   pull_request:
     branches:
       - master
+      - feedback
   push:
     branches:
       - master
+      - feedback
   workflow_dispatch:
 
 jobs:
