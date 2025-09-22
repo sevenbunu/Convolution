@@ -46,3 +46,20 @@ sealed class FilterType {
         val bias: Double = 128.0,
     ) : FilterType()
 }
+
+fun convertToFilterType(filter: String): FilterType {
+    val filterType =
+        when (filter) {
+            "id" -> FilterType.ID()
+            "blur3" -> FilterType.Blur3x3()
+            "blur5" -> FilterType.Blur5x5()
+            "gblur3" -> FilterType.GaussianBlur3x3()
+            "gblur5" -> FilterType.GaussianBlur5x5()
+            "motion" -> FilterType.MotionBlur()
+            "edges" -> FilterType.Edges()
+            "sharpen" -> FilterType.Sharpen()
+            "emboss" -> FilterType.Emboss()
+            else -> throw IllegalArgumentException("Incorrect filter")
+        }
+    return filterType
+}

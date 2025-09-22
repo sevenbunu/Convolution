@@ -23,28 +23,28 @@ fun main(args: Array<String>) {
     description = ["Prints the checksum (SHA-256 by default) of a file to STDOUT."],
 )
 class Input : Callable<Int> {
-    @Option(names = ["-i", "--input"], description = ["input image name"], required = true)
+    @Option(names = ["-i", "--input"], description = ["input image/directory name"], required = true)
     lateinit var inputImage: String
 
-    @Option(names = ["-o", "--output"], description = ["output image name"], required = true)
+    @Option(names = ["-o", "--output"], description = ["output image/directory name"], required = true)
     lateinit var outputImage: String
 
-    @Option(names = ["-m", "--mode"], description = ["output image name"])
+    @Option(names = ["-m", "--mode"], description = ["convolution mode"])
     var mode: String = "seq"
 
-    @Option(names = ["-b", "--batch"], description = ["output image name"])
+    @Option(names = ["-b", "--batch"], description = ["batch size"])
     var batchSize: Int = 1
 
-    @Option(names = ["-h", "--height"], description = ["output image name"])
+    @Option(names = ["-h", "--height"], description = ["height of the rectangle"])
     var rectHeight: Int = 1
 
-    @Option(names = ["-w", "--width"], description = ["output image name"])
+    @Option(names = ["-w", "--width"], description = ["width of the rectangle"])
     var rectWidth: Int = 1
 
-    @Option(names = ["-f", "--filter"], description = ["output image name"])
+    @Option(names = ["-f", "--filter"], description = ["filter name"])
     var filter: String = "id"
 
-    @Option(names = ["-p", "--pipeline"], description = ["output image name"])
+    @Option(names = ["-p", "--pipeline"], description = ["pipeline mode"])
     var pipeline: String = "sync"
 
     override fun call(): Int {
