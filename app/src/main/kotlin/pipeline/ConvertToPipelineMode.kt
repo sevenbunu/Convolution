@@ -1,6 +1,5 @@
 package pipeline
 
-
 fun convertToPipelineMode(pipeline: String): PipelineMode =
     when (pipeline) {
         "sync" -> PipelineMode.Sync
