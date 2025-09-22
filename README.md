@@ -45,7 +45,7 @@ cd Convolution
 ```
 
 ### Бенчмарк
-Производился над изображением [70000.png] (app/src/main/resources/70000.png)
+Производился над изображением app/src/main/resources/70000.png
 CPU: AMD Ryzen 7 7840HS
 RAM: 16GB
 
