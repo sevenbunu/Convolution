@@ -3,10 +3,10 @@ name: ktlint
 on:
   pull_request:
     branches:
-      - main
+      - master
   push:
     branches:
-      - main
+      - matser
   workflow_dispatch:
 
 jobs:
