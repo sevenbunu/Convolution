@@ -1,6 +1,5 @@
 package pipeline
 
-import convmode.ConvMode
 
 fun convertToPipelineMode(pipeline: String): PipelineMode =
     when (pipeline) {
